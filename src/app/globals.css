@@ -53,3 +53,22 @@ footer>.wrap{position:relative;z-index:1}
  .storySection:before,.storySection:after{display:none}
 }
 
+/* Neutral grey-to-white surfaces */
+.topline{background:#30343a;color:#e8e8e8}
+.heroShade{background:linear-gradient(90deg,rgba(24,25,27,.92) 0%,rgba(38,39,41,.62) 52%,rgba(45,45,45,.12) 100%)}
+.pageHero{background:linear-gradient(125deg,#e3e5e7 0%,#f3f4f4 52%,#fff 100%);color:var(--ink);border-bottom:1px solid #d9dcdf}
+.pageHero .eyebrow.light{color:var(--yellow-dark)}
+.pageHero p:not(.eyebrow){color:#65707a}
+.stats{background:linear-gradient(105deg,#dfe2e4,#f6f7f7 65%,#fff);color:var(--ink);border-block:1px solid #d7dade}
+.statsGrid div{border-left-color:#c7ccd0}
+.statsGrid span{color:#6c757d}
+.darkSection{background:linear-gradient(120deg,#dfe2e4 0%,#f3f4f4 55%,#fff 100%);color:var(--ink);border-block:1px solid #d7dade}
+.darkSection .eyebrow.light{color:var(--yellow-dark)}
+.fleetTable{border-top-color:#bfc5ca}
+.fleetRow{border-bottom-color:#c9ced2}
+.fleetRow.head{color:#69737c}
+footer{background:linear-gradient(120deg,rgba(232,234,235,.94),rgba(255,255,255,.97)),url("https://www.dakar-opava.cz/storage/01JKBA7QR23KVPH3NA4J9N2Y62.webp") center/cover;color:#4f5962;border-top-color:var(--yellow);backdrop-filter:blur(14px)}
+footer:before{background:rgba(255,255,255,.14)}
+.footerGrid h2,.footerBrand{color:var(--ink)}
+.copyright{border-top-color:#c9ced2}
+
