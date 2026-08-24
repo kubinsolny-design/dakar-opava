@@ -2,3 +2,54 @@
 @media(max-width:850px){.topInner>span{display:none}.topInner{justify-content:flex-end}.navRow{height:78px}.brand img{width:150px}.menuButton{display:flex;flex-direction:column;gap:5px;border:0;background:none;align-items:flex-end}.menuButton span{display:block;width:26px;height:2px;background:var(--navy)}.menuButton b{font-size:.68rem;text-transform:uppercase}.nav{display:none;position:absolute;left:0;right:0;top:112px;background:#fff;padding:25px 20px;flex-direction:column;align-items:stretch;gap:6px;box-shadow:0 20px 40px rgba(0,0,0,.15)}.nav.open{display:flex}.nav>a{padding:11px!important}.hero,.detailHero{min-height:600px}.heroShade{background:rgba(4,18,34,.76)}.statsGrid{grid-template-columns:1fr 1fr}.statsGrid div:nth-child(3){border-left:0}.statsGrid div{margin:10px 0}.section{padding-block:70px}.sectionHead,.proseGrid,.contactIntro,.formLayout{grid-template-columns:1fr;gap:28px}.serviceGrid,.featureGrid,.contactGrid{grid-template-columns:1fr}.split{grid-template-columns:1fr}.splitImage{min-height:360px}.splitContent{padding:55px 30px}.cta{padding:40px 30px;display:block}.ctaActions{margin-top:28px}.serviceList article{grid-template-columns:1fr;gap:28px;margin-bottom:65px}.serviceList article:nth-child(even) .listImage{order:0}.listImage{height:300px}.fieldGrid{grid-template-columns:1fr}.form{padding:25px}.footerGrid{grid-template-columns:1fr;gap:35px}.fleetRow{grid-template-columns:1.5fr 1fr 1fr 1fr;font-size:.84rem}.timeline>div{grid-template-columns:100px 1fr}}
 @media(max-width:480px){.wrap{width:min(100% - 28px,1180px)}h1{font-size:2.55rem}.heroLead{font-size:1rem}.heroActions .button{width:100%}.statsGrid strong{font-size:1.25rem}.statsGrid div{padding:4px 14px}.cta{margin-bottom:70px}.fleetTable{overflow-x:auto}.fleetRow{min-width:570px}.copyright{flex-direction:column;gap:8px}.pageHero{padding:80px 0}}
 
+/* Dakar yellow identity */
+:root{--red:#f2c300;--yellow:#f2c300;--yellow-dark:#d5a900}
+.nav>a.active,.nav>a:hover{border-color:var(--yellow)}
+.button{background:var(--yellow);color:var(--navy)}
+.button:hover{background:#ffd52b}
+.button.ghost{color:#fff;background:transparent;border-color:rgba(255,255,255,.72)}
+.eyebrow{color:var(--yellow-dark)}
+.eyebrow.light{color:#ffe16a}
+.cardBody>span,.index,.featureGrid strong,.contactGrid article>span{color:var(--yellow-dark)}
+.featureGrid>div{border-left-color:var(--yellow)}
+.lightCards>div{border-top-color:var(--yellow)}
+.cta{background:linear-gradient(120deg,#e7b900,#f6cc18);color:var(--navy)}
+.textLink.light{color:var(--navy)}
+.footerBrand span{color:var(--yellow)}
+footer{position:relative;background:linear-gradient(120deg,rgba(4,18,34,.93),rgba(12,38,62,.84)),url("https://www.dakar-opava.cz/storage/01JKBA7QR23KVPH3NA4J9N2Y62.webp") center/cover;color:#d7e0e8;border-top:3px solid var(--yellow);backdrop-filter:blur(12px)}
+footer:before{content:"";position:absolute;inset:0;background:rgba(4,18,34,.18);pointer-events:none}
+footer>.wrap{position:relative;z-index:1}
+
+/* Alternating company story timeline */
+.storySection{position:relative;padding:30px 0 120px;overflow:hidden;background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.82),rgba(255,255,255,.94))}
+.storySection:before,.storySection:after{content:"";position:absolute;bottom:40px;width:270px;height:390px;background:center/contain no-repeat;opacity:.1;pointer-events:none}
+.storySection:before{left:-55px;background-image:url("https://www.dakar-opava.cz/storage/01JKB992QS9WFSZ2N98Q8JZ6W4.png");transform:scaleX(-1)}
+.storySection:after{right:-50px;background-image:url("https://www.dakar-opava.cz/storage/01JKB992QS9WFSZ2N98Q8JZ6W4.png")}
+.storyHeading{text-align:center;margin-bottom:55px}
+.storyHeading h2{display:inline-block;font-size:clamp(2rem,3.7vw,3.4rem);padding-bottom:13px;border-bottom:5px solid var(--yellow)}
+.storyScroll{position:relative;z-index:1;overflow-x:auto;padding:0 max(20px,calc((100vw - 1540px)/2));scrollbar-color:var(--yellow) #edf1f5}
+.storyTimeline{position:relative;display:grid;grid-template-columns:repeat(8,190px);gap:0;min-width:1520px;height:470px;margin:auto}
+.storyTimeline:before{content:"";position:absolute;left:0;right:0;top:232px;border-top:4px dotted #9bafd1}
+.storyMilestone{position:relative;height:470px}
+.storyDot{position:absolute;z-index:2;top:219px;left:0;width:28px;height:28px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 6px #fff}
+.storyMilestone:before{content:"";position:absolute;left:12px;width:3px;background:#e8edf4}
+.storyMilestone.above:before{top:58px;height:174px}.storyMilestone.below:before{top:232px;height:176px}
+.storyYear{position:absolute;font-size:1.42rem;font-weight:900;color:#4e5864}
+.storyMilestone.above .storyYear{top:38px;left:-64px}.storyMilestone.below .storyYear{bottom:28px;left:-68px}
+.storyCard{position:absolute;width:174px;left:20px;color:#4c5662}
+.storyMilestone.above .storyCard{top:38px}.storyMilestone.below .storyCard{top:264px}
+.storyCard h3{font-size:1rem;letter-spacing:-.01em;margin-bottom:7px}
+.storyCard strong{display:block;font-size:.95rem}
+.storyCard p{font-size:.78rem;line-height:1.45;color:#89939e;margin-top:8px}
+
+@media(max-width:850px){
+ .storySection{padding:10px 0 80px}.storyHeading{margin-bottom:35px}.storyScroll{overflow:visible;padding:0 20px}
+ .storyTimeline{display:block;min-width:0;height:auto;width:min(620px,100%);padding-left:35px}
+ .storyTimeline:before{top:0;bottom:0;left:12px;right:auto;border-top:0;border-left:4px dotted #9bafd1}
+ .storyMilestone{height:auto;min-height:150px;padding:0 0 28px 28px}
+ .storyDot{top:4px;left:0}.storyMilestone:before{display:none}
+ .storyYear,.storyMilestone.above .storyYear,.storyMilestone.below .storyYear{position:static;display:block;font-size:1.25rem;margin-bottom:5px}
+ .storyCard,.storyMilestone.above .storyCard,.storyMilestone.below .storyCard{position:static;width:auto}
+ .storySection:before,.storySection:after{display:none}
+}
+
