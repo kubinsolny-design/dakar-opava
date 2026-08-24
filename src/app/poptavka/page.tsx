@@ -1,0 +1,4 @@
+import type {Metadata} from "next"; import {InquiryForm} from "@/components/InquiryForm"; import {site} from "@/lib/site";
+export const metadata:Metadata={title:"Nezávazná poptávka",description:"Pošlete Dakar Opava poptávku dopravy, skladování, logistiky nebo pneuservisu.",alternates:{canonical:"/poptavka"}};
+export default function Inquiry(){return <><section className="pageHero"><div className="wrap"><p className="eyebrow light">Nezávazná poptávka</p><h1>Začněme konkrétním požadavkem.</h1><p>Čím přesnější údaje pošlete, tím rychleji můžeme navrhnout další postup.</p></div></section><section className="section wrap formLayout"><div><p className="eyebrow">Poptávkový formulář</p><h2>Co potřebujete zajistit?</h2><p>Pokud je váš požadavek urgentní, volejte dispečink NON-STOP na <a href={site.phoneHref}>{site.phone}</a>.</p></div><InquiryForm/></section></>}
+
